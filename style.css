@@ -6,15 +6,15 @@
     list-style: none;
 }
 
-/* ACLARO QUE ALGUNAS PARTES DE MI WEB NO ME QUEDAN RESPONSIVE YA QUE NO UTILICE FLEX NI GRIDS Y SOLAMENTE UBIQUE TODO
-PARA QUE QUEDE A MI GUSTO CON MEDIDAS DE BOX MODELING */
-
 body{
 background-color: #f7fdff;
 font-family: Arial, Helvetica, sans-serif;
 }
 
-
+a {
+    color: #f534d5;
+    text-decoration: none !important;
+}
 
 .acomodar{
     width: 90%;
@@ -69,7 +69,7 @@ nav a:hover{
 
 .titulos{
     text-align: center;
-    background: url(images/fondo4.jpg);
+    background: url(images/fondo3.jpg);
     height: 700px;
     background-size: 1500px 700px;  
     overflow: hidden;
@@ -484,9 +484,9 @@ nav a:hover{
   
 }
 /* A partir de 700 el video se achique*/
-@media screen and (max-width: 715px) {
+@media screen and (max-width: 750px) {
     .video{
-        width: 300px;
+        width: 100%;
     }
     .acomodar{
         width: 100%;
