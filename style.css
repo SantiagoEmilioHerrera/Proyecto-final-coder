@@ -21,42 +21,39 @@ a {
     overflow: hidden;
     margin: auto;
 }
-.gridheader{
-    display: grid;
-    grid-template-columns: 15% auto;
-    grid-auto-rows: auto;
-    grid-column-gap: 0.5px;
-    overflow: hidden;
+.colorfondo{
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(77,106,106,1) 0%, rgba(25,223,238,1) 100%);
 }
-
-.divlogo{
-    text-align: center;
+.tamanonav{
+    padding-top: 0rem;
+    padding-bottom: 0rem;
 }
 
-nav{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+.mover-logo{
+    margin-left: 100px;
 }
-nav a{
-    padding: 10px 20px;
+.flexul{
+    margin-right: 100px;
+    flex-grow: 0 !important;
+}
+.acustom{
+    padding: 10px;
     height: 50px;
-    margin: 10px;
-    margin-top: 45px;
+    margin-top: 35px;
     margin-bottom: 20px;
-    color: black;
     font-size: 20px;
-    border-right: black 1px solid;
-    border-left: 1px solid black;
+    border-radius: 10px;
     transition: 0.5s;
 }
-nav a:hover{
+.acustom:hover{
     background-color: rgba(0, 203, 255, 0.3);
     transform: scale(1.5);
 }
-
+.nav1{
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .logo {
     border-radius: 100px;
     border: 0.5px solid;
@@ -67,7 +64,7 @@ nav a:hover{
     transform: scale(2);
 }
 
-.titulos{
+/* .titulos{
     text-align: center;
     background: url(images/fondo3.jpg);
     height: 700px;
@@ -80,7 +77,7 @@ nav a:hover{
     margin: 1em 0;
     border: solid black;
     margin-top: 285px;
-}
+} */
 
 .contenido{
     background-color: #e6e5e3;
@@ -139,7 +136,7 @@ nav a:hover{
 .group1{
     width: 90%;
     margin: auto;
-    padding: 30px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
 }
@@ -150,6 +147,7 @@ nav a:hover{
 }
 .textofooter p{
     padding: 5px;
+    margin-bottom: 0px !important;
 }
 .redes{
     text-align: center;
@@ -160,7 +158,21 @@ nav a:hover{
 }
 
 /* Algunas clases para informacion.html */
-
+.imageninfo{
+  border-radius: 10px;
+}
+.colordivinfo{
+    color: #e6e5e3;
+    margin-bottom: 30px;
+}
+.pinfo{
+    margin-top: 0;
+    padding-top: 10px;
+    padding-left: 5px;
+}
+.fondo2{
+    background-color: rgba(123, 123, 123, 0.8);
+}
 .titulos2{
     text-align: center;
     padding: 10px;
@@ -172,57 +184,6 @@ nav a:hover{
     border: solid rgb(244, 246, 253);
     color: white;
 }
-.titulos2 p{
-    margin-bottom: 10px;
-    padding: 10px;
-    border: solid 2px black;
-    border-radius: 10px;
-}
-.contenidoinfo{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    
-}
-.contenido2info{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-.listainfo{
-    width: 300px;
-    margin-left: 15px;
-    padding: 10px;
-    margin-bottom: 20px;
-}
-.listainfo li{
-    height: 100%;
-    margin: auto;
-    padding: 10px;
-    border-bottom: 1px solid;
-    font-style: italic;
-}
-
-.images1{
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    order: -1;
-}
-.images2{
-    padding: 10px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-}
-.img2{
-    border: solid 1px;
-    border-radius: 10px;
-}
-.img1{
-    border: solid 1px;
-    border-radius: 10px;
-}
-
 .fondoinfo{
     background: url(images/fondovideo.jpg);
     
@@ -230,18 +191,6 @@ nav a:hover{
 }
 .info{
     padding-top: 30px;
-}
-.pultimo{
-    text-align: center;
-    font-size: 20px;
-    padding-top: 30px;
-    padding-bottom: 10px;
-}
-.blanco{
-    background-color: aliceblue;
-    width: 85%;
-    margin: auto;
-    margin-bottom: 50px;
 }
 
 /*ALGUNOS ESTILOS PARA LA UBICACION*/
@@ -266,11 +215,7 @@ nav a:hover{
     color: #f2ecb6;
 }
 .mapa{
-    width: 405px;
-    height: 305px;
-    display: inline-block;
-    border: 2px solid;
-    border-radius: 5px;
+    text-align: center;
 }
 .blancoubi{
     /*color o no color*/
@@ -415,65 +360,36 @@ nav a:hover{
     text-align: center;
 }
 
-/* .prueba{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: 200px;
-    grid-template-areas: " foto1 foto1 texto1"
-                        " texto2 foto2 foto2"
-                        " foto3 foto3 texto3";
-}
-.p1{
-    grid-area: foto1;
-    background-color: aqua;
-}
-.p2{
-    grid-area: texto1;
-    background-color: red;
-}
-.p3{
-  grid-area: texto2;
-    background-color: black;
-}
-.p4{
-   grid-area: foto2;
-    background-color: blue;
-}
-.p5{
-    grid-area: foto3;
-    background-color: chartreuse;
-}
-.p6{
-    grid-area: texto3;
-    background-color: rgb(112, 9, 9);
-} */
-
-@media screen and (max-width:668px) {
-    .gridheader{
-        grid-template-columns: 100%;
-        grid-auto-rows: auto;
-        grid-gap: 0.5px;
-    }
-    nav{
-        flex-flow: column wrap;
-        padding: 0;
+@media screen and (max-width:992px) {
+    .acustom{
+        color: black !important;
+        padding: 10px;
+        height: 50px;
+        font-size: 20px;
+        transition:0.5s;
         text-align: center;
+        border-radius: 15px;
+        margin: 0px;
+        margin-top: 1px;
+        margin-bottom: 0px;
     }
-    nav a{
-        margin: 5px;
-        padding: 7px;
+    .flexul{
+        margin-right: 0px;
+    }
+    .mover-logo {
+        margin-left: 30px;
     }
     .formulario{
         width: 350px;
     }
     .mapa{
-        width: 305px;
-        height: 205px;
+        width: 100%;
+        height: 305px;
         text-align: center;
         margin-right: 5px;
     }
     iframe{
-        width: 300px;
+        width: 100%;
         height: 200px;
         text-align: center;
         margin-right: 5px;
@@ -494,5 +410,22 @@ nav a:hover{
     .blanco{
         width: 100%;
     }
-    
+    .content{
+        width: 100%;
+    }
+    .divvideo{
+        margin: 0px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .divlista{
+        margin: 0px;
+    }
+    .postreshela{
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+    .imageninfo{
+        width: 100%;
+    }
 }
